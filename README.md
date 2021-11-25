@@ -1,4 +1,4 @@
-# SoftwareEngineeringAssessment
+# Coding Assessment
 My solution to a company's coding assessment
 
 ## The Problem
