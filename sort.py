@@ -1,10 +1,13 @@
-
+# allows for arguemnt input from the cli
+import sys
+# allows for file validation by accessing the directory
+import os.path as path
 # allows for readable data display
 import yaml
 # allows for reading csv files and sorting
 import pandas as manageFile
 
-file = './data.csv'
+
 
 def sortFile(fileName):
 
@@ -25,6 +28,10 @@ def sortFile(fileName):
 
     #using yaml to display the data in a readable manner
     return yaml.dump(results)
+    
 
 
-print(sortFile(file))
+if __name__ == '__main__':
+    if path.isfile(f"{sys.argv[1]}"):
+        print(sortFile(sys.argv[1]))
+    else: print("the file does not exist, exiting appication")
