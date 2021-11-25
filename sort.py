@@ -10,6 +10,7 @@ import pandas as manageFile
 
 
 def sortFile(fileName):
+    
 
     csvFile = manageFile.read_csv(fileName)
 
@@ -39,7 +40,8 @@ def sortFile(fileName):
     return yaml.dump(results)
     
 
-
+#type in the following command in the cli to run sample data file
+# python sort.py ./csv_files/data.csv 
 if __name__ == '__main__':
     if path.isfile(f"{sys.argv[1]}"):
         print(sortFile(sys.argv[1]))
