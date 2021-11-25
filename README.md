@@ -45,7 +45,7 @@ I then looped through this variable and extracted the necessary information and 
 
 Since we're creating a cli tool we want to be able to just type in the file name we want to sort in the terminal itself rather than having to open up the python script and entering it in there. In order to do this, I used the python sys module which takes in arguements from the terminal. I used the python os module to check if the entered file actually exists.
 
-Since the function is returning a dictonary with the relavnt data it made it posible to write test cases to see if we're getting the right data.
+Since the function is returning a dictonary with the relavant data, it made it posible to write test cases to see if we're getting the right data.
 
 Pyhton needs to be installed on the local machine in order for this program to run. Since I used some python modules to create this tool, they will need to be installed as well. All the dependencies are listed in the requirements.txt file which can be installed by typing in the following command (adjust the command based on the file path)
 
@@ -53,7 +53,7 @@ Pyhton needs to be installed on the local machine in order for this program to r
 
 I recommand running the program/installing the depencies in a python virtual environment to avoid clashes with other projects/programs.
 
-(macOS commands, commands vary depending on OS)
+(macOS commands)
 
 <code>python -m venv venv</code>
 
